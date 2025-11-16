@@ -2,6 +2,12 @@
 Resource  resource.robot
 Suite Setup  Open And Configure Browser
 Suite Teardown  Close Browser
+Test Setup    Go To Start With Zero
+
+*** Keywords ***
+Go To Start With Zero
+    Go To  ${HOME_URL}
+    Click Button  Nollaa
 
 *** Test Cases ***
 At start the counter is zero
